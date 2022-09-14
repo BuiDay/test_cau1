@@ -1,0 +1,115 @@
+.ourteam__container {
+  width: 100%;
+  background: var(--background-color);
+  padding-top: 230px;
+
+  .ourteam__description {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #bababa;
+    width: 70%;
+    margin: 50px auto 0;
+  }
+
+  .ourteam__members {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 76px;
+
+    .ourteam__member {
+      position: relative;
+      overflow: hidden;
+      width: 25%;
+
+      &:hover .ourteam__info {
+        transform: translateY(0);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+
+      .ourteam__info {
+        position: absolute;
+        max-height: 93px;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        background: #fff;
+        padding-left: 17px;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+
+        .ourteam__name {
+          font-weight: 700;
+          font-size: 32px;
+          margin-top: 10px;
+        }
+
+        .ourteam__position {
+          font-weight: 600;
+          font-size: 20px;
+          color: #5e5e5e;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ourteam__container {
+    padding-top: 100px;
+
+    .ourteam__description {
+      font-weight: 600;
+      font-size: 18px;
+      width: 80%;
+    }
+
+    .ourteam__members {
+      display: flex;
+      width: 100%;
+      margin-top: 36px;
+      flex-direction: column;
+      .ourteam__member {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 600px;
+        pointer-events: none;
+
+        &:nth-child(2) {
+          .ourteam__info {
+            right: 0;
+          }
+        }
+
+        &:nth-child(4) {
+          .ourteam__info {
+            right: 0;
+          }
+        }
+
+        .ourteam__info {
+          max-height: 70px;
+          height: 100%;
+          width: 60%;
+          bottom: 0;
+          transform: translateY(0);
+          .ourteam__name {
+            font-size: 23px;
+          }
+
+          .ourteam__position {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

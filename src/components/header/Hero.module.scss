@@ -1,0 +1,53 @@
+.hero__container {
+  width: 100%;
+  background: var(--background-color);
+  padding-top: 133px;
+
+  .hero__top {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero__title {
+    color: var(--text-color);
+    font-size: 163px;
+    font-weight: 600;
+  }
+
+  .hero__under {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 10px;
+
+    .hero__content {
+      font-size: 32px;
+      font-weight: 400;
+      color: #bababa;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__container {
+    padding-top: 20px;
+
+    .hero__top {
+        margin: 0 auto;
+      width:50%;
+      .hero__title {
+        font-size: 50px;
+      }
+    }
+
+    .hero__under {
+      width: 55%;
+      margin: 0 auto;
+      padding-top: 30px;
+
+      .hero__content {
+        font-size: 15px;
+      }
+    }
+  }
+}

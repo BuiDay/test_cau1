@@ -1,0 +1,108 @@
+.services__container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  padding-top: 370px;
+
+  .services__content {
+    width: 75%;
+    margin: 100px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 75px;
+
+    .services__item {
+      background: #fff;
+      height: 390px;
+      position: relative;
+      overflow: hidden;
+      padding: 50px 90px 0 43px;
+
+      .services__title {
+        font-size: 36px;
+        font-weight: 600;
+        color: #000;
+      }
+
+      .services__description {
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 12px;
+      }
+
+      a {
+        display: block;
+        margin-top: 22px;
+        font-weight: 600;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 29px;
+          margin-left: 10px;
+        }
+      }
+
+      .services__start {
+        position: absolute;
+        width: 100%;
+        height: 53px;
+        background: #00cf2e;
+        height: 53.56px;
+        bottom: 0;
+        left: 0;
+
+        span {
+          margin-left: 43px;
+          line-height: 53px;
+          font-weight: 600;
+          font-size: 20px;
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services__container {
+    padding-top: 50px;
+
+    .services__content {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 22px;
+      margin: 34px auto 0;
+
+      .services__item {
+        padding: 30px 40px 0 43px;
+        .services__title {
+          font-size: 28px;
+          font-weight: 600;
+          color: #000;
+        }
+
+        .services__description {
+          font-weight: 400;
+          font-size: 18px;
+          margin-top: 12px;
+        }
+
+        a {
+          margin-top: 25px;
+          font-size: 18px;
+
+          svg {
+            margin-left: 0;
+          }
+        }
+
+        .services__start {
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
